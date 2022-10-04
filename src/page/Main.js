@@ -1,7 +1,7 @@
 import React from 'react';
 
 const main = () => {
-  const TvlValue = '123,456,789';
+  const TvlValue = '12,345,678';
   return (
     <div className="main-page">
       <img src="https://cdn-icons-png.flaticon.com/512/3073/3073524.png" />
