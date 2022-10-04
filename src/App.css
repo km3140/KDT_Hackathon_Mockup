@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.background {
+  background-color: #181b23;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: white;
+  margin: 0px;
+  padding: 1rem;
+  width: 8rem;
+  display: inline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wallet {
+  color: #ffe646;
+  padding: 2px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wallet-connect-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-left: 30px;
+}
+.bar {
+  display: flex;
+  background-color: #212531;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+  align-items: center; /*??*/
+}
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+.menu-list li {
+  padding: 10px;
+  color: hsla(0, 0%, 100%, 0.3);
+  margin-right: 30px;
+}
+.main-page {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 200px;
+  margin-top: 124px;
+}
+.main-page img {
+  width: 177px;
+}
+.tvl-div {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin: 25px;
+}
+.tvl-div span {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.tvl-header {
+  font-style: normal;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tvl-value {
+  font-size: 30px;
 }
