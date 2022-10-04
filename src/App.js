@@ -10,7 +10,10 @@ function App() {
     <div className="background">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route
+          path="https://km3140.github.io/KDT_Hackathon/"
+          element={<Main />}
+        />
         <Route path="/transaction/:id" element={<Transaction />} />
       </Routes>
     </div>

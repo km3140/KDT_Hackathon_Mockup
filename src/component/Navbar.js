@@ -9,7 +9,7 @@ const Navbar = () => {
       <h1>No Leak</h1>
       <ul className="menu-list">
         {menuList.map((menu) => (
-          <li>{menu}</li>
+          <li key={menu}>{menu}</li> //key={menu}??
         ))}
       </ul>
       <div className="wallet-connect-btn">
