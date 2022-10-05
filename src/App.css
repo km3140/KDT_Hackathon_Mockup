@@ -1,17 +1,26 @@
-.background {
+html {
   background-color: #181b23;
-  height: 100vh;
+  background-size: cover;
 }
 h1 {
   color: white;
   margin: 0px;
+  margin-left: 7px;
   padding: 1rem;
   width: 8rem;
   display: inline;
 }
+h1:hover {
+  cursor: pointer;
+}
 .wallet {
   color: #ffe646;
   padding: 2px;
+}
+.wallet-connect-btn:hover .wallet {
+  /*굳*/
+  color: #ccaa00;
+  cursor: pointer;
 }
 .wallet-connect-btn {
   display: flex;
@@ -36,6 +45,10 @@ h1 {
   color: hsla(0, 0%, 100%, 0.3);
   margin-right: 30px;
 }
+.menu-list li:hover {
+  color: #ffe646;
+  cursor: pointer;
+}
 .main-page {
   align-items: center;
   display: flex;
@@ -43,7 +56,7 @@ h1 {
   width: 100%;
   justify-content: center;
   margin-bottom: 200px;
-  margin-top: 124px;
+  margin-top: 111px;
 }
 .main-page img {
   width: 177px;
@@ -62,4 +75,85 @@ h1 {
 }
 .tvl-value {
   font-size: 30px;
+}
+.transaction-box {
+  background-image: linear-gradient(317deg, #23293b 100%, #39425d 0);
+  box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 2px;
+  width: 700px;
+  height: 100px;
+  display: flex;
+  align-items: center; /*??*/
+  margin-bottom: 30px;
+}
+.transaction-box:hover {
+  cursor: pointer;
+  border: none;
+}
+.transaction-box h3 {
+  color: white;
+  margin: 0 50px;
+}
+.transaction-menu-label {
+  color: rgb(167, 164, 164);
+  padding-bottom: 3px;
+}
+.transaction-menu-value {
+  color: white;
+}
+.transaction-menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 50px;
+  gap: 50px;
+}
+.transaction-header {
+  width: 700px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: baseline; /*??*/
+}
+h2 {
+  color: white;
+}
+.transaction-header input {
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px gray solid;
+  color: white;
+}
+.search-btn {
+  color: gray;
+}
+.search-btn:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.search-box {
+  margin-left: auto;
+}
+.plus-transaction {
+  background-image: linear-gradient(317deg, #23293b 100%, #39425d 0);
+  box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 2px;
+  width: 100px;
+  height: 100px;
+  align-items: center; /*??*/
+  margin-bottom: 30px;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100% 100%;
+  margin: auto;
+}
+.plus {
+  color: white;
+}
+.plus:hover {
+  color: yellow;
+  cursor: pointer;
 }

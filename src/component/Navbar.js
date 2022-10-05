@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWallet } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
-  const menuList = ['메뉴1', '메뉴2', '메뉴3', '메뉴4'];
+  const menuList = ['메뉴1', '메뉴2', '메뉴3', ''];
   return (
     <div className="bar">
       <h1>No Leak</h1>
