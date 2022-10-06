@@ -27,7 +27,7 @@ const TransactionInfo = () => {
           </div>
           <div className="info-body-1">
             <div>금액</div>
-            <div>$12,345,678</div>
+            <div>$1,234,567</div>
           </div>
         </div>
         <div className="info-body">
