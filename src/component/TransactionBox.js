@@ -7,29 +7,31 @@ const TransactionBox = (props) => {
   return (
     <div
       className="transaction-box"
-      onClick={navigater.bind(null, `/Transaction/${props.title}`)}
+      onClick={navigater.bind(null, `/TransactionInfo/${props.title}`)}
     >
-      <div>
-        <h3>{props.title}</h3>
-      </div>
-      <div className="transaction-menu">
-        {/*추후 .map으로 코드 줄이기*/}
+      <div className="transaction-box-header">
         <div>
-          <div className="transaction-menu-label">금액</div>
-          <div className="transaction-menu-value">
-            ${parseInt(props.amount).toLocaleString('ko-KR')}
+          <h3>{props.title}</h3>
+        </div>
+        <div className="transaction-menu">
+          {/*추후 .map으로 코드 줄이기*/}
+          <div>
+            <div className="transaction-menu-label">금액</div>
+            <div className="transaction-menu-value">
+              ${parseInt(props.amount).toLocaleString('ko-KR')}
+            </div>
+          </div>
+          <div>
+            <div className="transaction-menu-label">제안자</div>
+            <div className="transaction-menu-value">{props.name}</div>
+          </div>
+          <div>
+            <div className="transaction-menu-label">투표현황</div>
+            <div className="transaction-menu-value">{props.votePercent}%</div>
           </div>
         </div>
-        <div>
-          <div className="transaction-menu-label">수령자</div>
-          <div className="transaction-menu-value">{props.name}</div>
-        </div>
-        <div>
-          <div className="transaction-menu-label">동의현황</div>
-          <div className="transaction-menu-value">{props.agreePercent}%</div>
-        </div>
       </div>
-      <progress value={parseInt(props.agreePercent)} max="100"></progress>
+      <progress value={parseInt(props.votePercent)} max="100"></progress>
     </div>
   );
 };

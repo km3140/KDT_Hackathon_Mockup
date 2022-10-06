@@ -81,15 +81,25 @@ h1:hover {
   box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
   border: 1px solid hsla(0, 0%, 100%, 0.2);
   border-radius: 2px;
-  width: 700px;
-  height: 100px;
-  display: flex;
-  align-items: center; /*??*/
+  width: 800px;
+  height: 110px;
   margin-bottom: 30px;
+  align-items: center;
+}
+.transaction-box-header {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+}
+progress {
+  width: 760px;
+  display: block;
+  margin: auto;
+  color: yellow;
 }
 .transaction-box:hover {
   cursor: pointer;
-  border: none;
+  border-color: #ffb400;
 }
 .transaction-box h3 {
   color: white;
@@ -109,7 +119,7 @@ h1:hover {
   gap: 50px;
 }
 .transaction-header {
-  width: 700px;
+  width: 800px;
   height: 50px;
   margin-bottom: 15px;
   display: flex;
@@ -153,7 +163,101 @@ h2 {
 .plus {
   color: white;
 }
-.plus:hover {
-  color: yellow;
+.plus-transaction:hover {
   cursor: pointer;
+  border-color: #ffb400;
+}
+.transaction-info {
+  margin: auto;
+  margin-top: 70px;
+}
+.transaction-info-top {
+  display: flex;
+  width: 800px;
+  height: 50px;
+  margin: auto;
+}
+.back {
+  color: white;
+  font-size: 40px;
+  margin-right: 15px;
+}
+.back:hover {
+  cursor: pointer;
+  color: yellow;
+}
+.vote-detail {
+  color: white;
+  font-size: 30px;
+}
+.transaction-info-top :last-child {
+  margin-left: auto;
+  gap: 10px;
+}
+.vote-btn {
+  margin: auto 0px;
+  padding: 3px 40px;
+  font-size: 20px;
+  color: white;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.05);
+  box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
+  border-radius: 2px;
+}
+.vote-btn:hover {
+  cursor: pointer;
+  border-color: #ffb400;
+}
+.transaction-info-top div {
+  display: flex;
+}
+.transaction-info-middle {
+  background-image: linear-gradient(317deg, #23293b 100%, #39425d 0);
+  box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  width: 800px;
+  height: 200px;
+  margin: auto;
+}
+.info-header {
+  padding: 15px;
+  padding-left: 20px;
+  font-size: 35px;
+  color: white;
+}
+.info-body {
+  display: flex;
+  padding-left: 20px;
+  gap: 20px;
+  width: 760px;
+}
+.info-body-1 {
+  gap: 20px;
+  padding-bottom: 20px;
+  width: 380px;
+}
+.info-body-1 :first-child {
+  color: gray;
+}
+.info-body-1 :last-child {
+  color: white;
+}
+.transaction-detail {
+  background-image: linear-gradient(317deg, #23293b 100%, #39425d 0);
+  box-shadow: 0 2px 18px 0 rgb(0 0 0 / 50%);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  width: 800px;
+  margin: auto;
+  margin-top: 22px;
+}
+.transaction-detail .info-body-1 {
+  padding: 20px;
+  width: 760px;
+}
+.detail-content {
+  margin-top: 10px;
+}
+.box-add-page {
+  font-size: 60px;
+  color: white;
 }

@@ -2,9 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import TransactionBox from '../component/TransactionBox';
+import { useNavigate } from 'react-router-dom';
 
-const main = () => {
+const Main = () => {
   let TvlValue = 12345678;
+  const navigater = useNavigate();
+
   return (
     <div className="main-page">
       <img src="https://cdn-icons-png.flaticon.com/512/3073/3073524.png" />
@@ -24,27 +27,30 @@ const main = () => {
           title="메타콩즈 인수비"
           amount="1234567"
           name="남영준"
-          agreePercent="100%"
+          votePercent="100"
         />
         <TransactionBox
           title="스테픈 신발 강화"
           amount="2345678"
           name="김윤건"
-          agreePercent="75%"
+          votePercent="75"
         />
         <TransactionBox
           title="이더 롱 치기"
           amount="3456789"
           name="심상준"
-          agreePercent="50%"
+          votePercent="50"
         />
         <TransactionBox
           title="블록체인스쿨 수강료"
           amount="4567890"
           name="김민관"
-          agreePercent="25%"
+          votePercent="25"
         />
-        <div className="plus-transaction">
+        <div
+          className="plus-transaction"
+          onClick={navigater.bind(null, '/Add')}
+        >
           <FontAwesomeIcon className="plus" icon={faPlus} />
         </div>
       </div>
@@ -52,4 +58,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
