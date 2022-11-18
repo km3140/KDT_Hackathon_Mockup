@@ -1,1 +1,1 @@
-React
+React, Bootstrap 사용
